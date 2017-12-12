@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns = "http://www.w3.org/1999/xhtml" >
+
+<head>
+	<title>Question 3</title>
+	<meta charset="utf-8"></meta>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+	<script>
+		<!--Variable to hold the student names in an array-->
+		var studentNames = [];
+		
+		<!--Function to sort and print out the array-->
+		function printArray() {
+			var area = document.getElementById("myArea");
+			studentNames.push(document.getElementById("userInput").value);
+			studentNames.sort();
+			area.innerHTML = studentNames.join("\n");
+			
+			resetForm();<!--Calling the resetForm function-->
+		}
+		
+		<!--Function to reset the form so the field is empty-->
+		function resetForm(){
+			document.getElementById("usrform").reset();
+		}
+	</script>
+	
+	<!--The form to enter the students names in-->
+	<form id="usrform">
+		Enter student name: <input type="text" id="userInput" name ="studName" size="30">		
+		<!--Button where onclick calls the printArray function-->
+		<input id="clickme" type="button" value="clickme" onclick="printArray();"/>
+	</form>
+	</br>
+	
+	<!--Text area to hold all of the values in the array-->
+	<textarea rows="40" cols="60" id="myArea"></textarea>
+</body>
+</html> 

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns = "http://www.w3.org/1999/xhtml" >
+
+<head>
+	<title>Question 2</title>
+	<meta charset="utf-8"></meta>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+	<!--Creating some forms for the JS counter to work further down-->
+	<h3>Forms to allow for the counter to work</h3>
+	<form>
+		First name:<br>
+		<input type="text" name="firstname"><br>
+	</form>
+	<form>
+		Last name:<br>
+		<input type="text" name="firstname"><br>
+	</form>
+	
+	<!--Some links for the JS counter to work further down-->
+	</br>
+	<a href="url">Link 1</a>
+	<a href="url">Link 2</a>
+	<a href="url">Link 3</a>
+	
+	<h3>JavaScript Below</h3>
+	
+	<!--Section of code to print out the date and time in different colours-->
+	<p>The date and time is currently: 
+		<script>
+			var currDate = new Date();
+	
+			<!--Writing out the date and time using different colours
+			document.write("<span class=day>" + currDate.getDay() + ", </span>");
+			document.write("<span class=date>" + currDate.getDate() + " </span>");
+			document.write("<span class=month>" + currDate.getMonth() + " </span>");
+			document.write("<span class=year>" + currDate.getFullYear() + " </span>");
+			document.write("<span class=hourMin>(" + currDate.getHours() + ":" + currDate.getMinutes() + ")</span></br>");
+		</script>
+	</p>
+	
+	<!--Section of code to determine and show what browser the client is using-->
+	<p id="browserN"></p>
+	<script>
+		var browName = document.getElementById("browserN");
+		
+		<!--If statement to determine browser and change element to show it>
+		if(navigator.userAgent.indexOf("Firefox") != -1) {
+			browName.innerHTML = ("You have accessed from: "+"<span class =bold>Mozilla Firefox</span>");
+		} else if(navigator.userAgent.indexOf("Chrome") != -1) {
+			browName.innerHTML = ("You have accessed from: "+"<span class =bold>Google Chrome</span>");
+		} else if(navigator.userAgent.indexOf("MSIE") != -1) {
+			browName.innerHTML = ("You have accessed from: "+"<span class =bold>Internet Explorer</span>");
+		} else if(navigator.userAgent.indexOf("Safari") != -1) {
+			browName.innerHTML = ("You have accessed from: "+"<span class =bold>Safari</span>");
+		} else {
+			browName.innerHTML = ("Your browser is unidentifiable.");
+		}
+	</script>
+    
+	<!--Section of code to show amount of forms and links on the pages-->
+	<p id="countForm"></p>
+	<p id="countLink"></p>
+	<script>
+		<!--Counting number of forms and displaying it-->
+		document.getElementById("countForm").innerHTML = ("Number of forms: " + "<span class=bold>" + document.getElementsByTagName('form').length) + "</span>";
+		
+		<!--Counting number of links and displaying it-->
+		document.getElementById("countLink").innerHTML = ("Number of links: " + "<span class=bold>" + document.links.length) + "</span>";
+	</script>
+
+	</body>
+</html> 

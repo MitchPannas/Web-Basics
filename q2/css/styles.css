@@ -1,0 +1,33 @@
+.day {
+    color: red;
+	font-weight: bold;
+}
+
+.date {
+    color: green;
+	font-weight: bold;
+}
+
+.month {
+    color: yellow;
+	font-weight: bold;
+}
+
+.year {
+    color: blue;
+	font-weight: bold;
+}
+
+.hourMin {
+    color: brown;
+	font-weight: bold;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+body {
+	background-color: Lavender;
+}
+

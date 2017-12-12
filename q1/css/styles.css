@@ -1,0 +1,185 @@
+/*Outer container to hold everything in*/
+div.outer {
+	width: 1100px;
+	border: 1px solid gray;
+	margin: 0 auto;
+	position: relative;
+	background-image: url(../images/b44.png);
+	background-repeat: repeat;
+}
+
+body {
+	color: white;
+}
+
+/*Inner container to hold the content in*/
+div.inner {
+	width: 900px;
+	/*border: 1px solid gray;*/
+	margin: 0 auto;
+}
+
+/*Class to center text*/
+.centerit {
+	text-align: center;
+}
+
+/*CSS for the photos page */
+.mainpage{
+	width: 409px;
+	height: 307px;
+	padding: 10px;
+	position: relative;
+	margin: auto;
+	margin-left: 10px;
+	float: left;
+	margin-bottom: 5px;
+	border-radius: 25px;
+}
+
+/*CSS for the header and footer*/
+header, footer {
+    padding: 1em;
+    color: black;
+    background-color: black;
+    clear: left;
+    text-align: center;
+	background-image: url(../images/b25.png);
+	background-repeat: repeat;
+}
+
+/*Image for the header*/
+#headimage {
+		width: 900px;
+		height: 100px;
+		margin-bottom: 2px;
+		margin: auto;
+}
+
+/*CSS for the NAV bar */
+ul.navBar {
+    list-style-type: none;
+    margin: 0;
+	display: inline-block;
+    padding: 0;
+    overflow: hidden;
+	background-image: url(../images/b50.png);
+	background-repeat: repeat;
+
+}
+
+li.nav {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+	font-size: 110%;
+	font-family: verdana;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-image: url(../images/b50border.png);
+	background-color: #4CAF50;
+}
+
+/*CSS for the photos page */
+.photoleft{
+	width: 409px;
+	height: 307px;
+	padding: 10px;
+	border: 2px solid gray;
+	position: relative;
+	margin: auto;
+	margin-left: 10px;
+	float: left;
+	margin-bottom: 5px;
+	border-radius: 25px;
+}
+
+.photoright{
+	width: 409px;
+	height: 307px;
+	padding: 10px;
+	border: 2px solid gray;
+	position: relative;
+	margin: auto;
+	margin-left: 10px;
+	float: right;
+	margin-bottom: 5px;
+	border-radius: 25px;
+}
+
+/*Containers used in the audio and video page*/
+.container{
+	width: 400px;
+	margin: auto;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+.container2{
+	width: 610px;
+	margin: auto;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+/* Styles for the form */
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+}
+
+/* Centre the form within the page */
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+/* Style the text boxes */
+input {
+    width:439px;
+    height:27px;
+    background:#efefef;
+    border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    border-radius:5px;
+}
+
+textarea {
+	height:213px;
+	width:439px;
+	background:#efefef;
+	border:1px solid #dedede;
+    padding:10px;
+    margin-top:3px;
+    font-size:0.9em;
+    color:#3a3a3a;
+    border-radius:5px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
